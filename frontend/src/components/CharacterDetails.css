@@ -1,0 +1,6 @@
+.details-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; padding: 24px; }
+.details { width: min(720px, 100%); background: white; color: #111; border-radius: 12px; padding: 16px; position: relative; }
+.details .close { position: absolute; right: 8px; top: 8px; border: 1px solid rgba(0,0,0,0.1); background: rgba(0,0,0,0.05); color: #111; width: 32px; height: 32px; border-radius: 16px; font-size: 20px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; z-index: 2; }
+.details .close:hover, .details .close:focus-visible { background: rgba(0,0,0,0.12); outline: none; }
+.details .header { display: flex; gap: 16px; align-items: center; }
+.details .header img { width: 160px; height: 160px; object-fit: cover; border-radius: 8px; background: #f3f3f3; }

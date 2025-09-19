@@ -1,0 +1,22 @@
+.characters-list .toolbar { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; }
+.characters-list .toolbar input { flex: 1; padding: 8px 10px; border: 1px solid rgba(0,0,0,0.2); border-radius: 6px; }
+.characters-list .toolbar .count { color: #666; font-size: 12px; }
+
+/* Dropdown visibility fixes */
+.characters-list .toolbar select { padding: 8px 10px; border: 1px solid rgba(0,0,0,0.2); border-radius: 6px; background: #fff; color: #111; }
+.characters-list .toolbar select option { color: #111; background: #fff; }
+
+/* Grid and cards */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.card { display: flex; flex-direction: column; align-items: center; text-align: left; padding: 10px; border: 1px solid rgba(0,0,0,0.15); border-radius: 10px; background: white; cursor: pointer; transition: transform 0.1s ease, box-shadow 0.1s ease; }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,0.12); }
+.card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; background: #f3f3f3; }
+.card .info { width: 100%; padding-top: 8px; }
+.card .name { font-weight: 600; color: #555 }
+.card .title, .card .family { color: #555; font-size: 12px; }
+
+/* Pagination */
+.pagination { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 16px; }
+.pagination .page-info { color: #666; font-size: 12px; }
+.pagination button { padding: 6px 10px; border: 1px solid rgba(0,0,0,0.2); background: white; color: #111; border-radius: 6px; cursor: pointer; }
+.pagination button:disabled { color: #111; opacity: 0.5; cursor: not-allowed; }
